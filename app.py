@@ -5,11 +5,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('F:/FINAL_YR_PROJECT/saved folder/diabetes_pickle_model.pkl', 'rb'))
+diabetes_model = pickle.load(open('/saved folder/diabetes_pickle_model.pkl', 'rb'))
 
-heart_disease_model = pickle.load(open('F:/FINAL_YR_PROJECT/saved folder/heart_pickle_model.pkl','rb'))
+heart_disease_model = pickle.load(open('/saved folder/heart_pickle_model.pkl','rb'))
 
-parkinsons_model = pickle.load(open('F:/FINAL_YR_PROJECT/saved folder/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('/saved folder/parkinsons_model.sav', 'rb'))
 
 
 
