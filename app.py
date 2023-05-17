@@ -5,11 +5,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('saved folder/diabetes_pickle_model.pkl', 'rb'))
+diabetes_model = pickle.load(open('F:/FINAL_YR_PROJECT/saved folder/diabetes_model (3).pkl', 'rb'))
 
-heart_disease_model = pickle.load(open('saved folder/heart_pickle_model.pkl','rb'))
+heart_disease_model = pickle.load(open('F:/FINAL_YR_PROJECT/saved folder/heart_pickle_model.pkl','rb'))
 
-parkinsons_model = pickle.load(open('saved folder/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('F:/FINAL_YR_PROJECT/saved folder/parkinsons_model.sav', 'rb'))
 
 
 
@@ -87,43 +87,43 @@ if (selected == 'Heart Disease Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        age = st.text_input('Age')
+        age = int(st.text_input('Age'))
         
     with col2:
-        sex = st.text_input('Sex')
+        sex = int(st.text_input('Sex'))
         
     with col3:
-        cp = st.text_input('Chest Pain types')
+        cp = int(st.text_input('Chest Pain types'))
         
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
+        trestbps = int(st.text_input('Resting Blood Pressure'))
         
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
+        chol = int(st.text_input('Serum Cholestoral in mg/dl'))
         
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
+        fbs = int(st.text_input('Fasting Blood Sugar > 120 mg/dl'))
         
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
+        restecg =int( st.text_input('Resting Electrocardiographic results'))
         
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved')
+        thalach = int(st.text_input('Maximum Heart Rate achieved'))
         
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        exang = int(st.text_input('Exercise Induced Angina'))
         
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise')
+        oldpeak = int(st.text_input('ST depression induced by exercise'))
         
     with col2:
-        slope = st.text_input('Slope of the peak exercise ST segment')
+        slope = int(st.text_input('Slope of the peak exercise ST segment'))
         
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
+        ca = int(st.text_input('Major vessels colored by flourosopy'))
         
     with col1:
-        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+        thal = int(st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect'))
         
         
      
@@ -136,7 +136,7 @@ if (selected == 'Heart Disease Prediction'):
     if st.button('Heart Disease Test Result'):
         heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                          
         
-        if (heart_prediction[0] == 1):
+        if (heart_prediction[0] == 0):
           heart_diagnosis = 'The person is having heart disease'
         else:
           heart_diagnosis = 'The person does not have any heart disease'
