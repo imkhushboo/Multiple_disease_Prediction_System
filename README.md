@@ -1,53 +1,68 @@
 # Multiple_disease_Prediction_System
 
 This project provides a web application for predicting multiple diseases, including diabetes, Parkinson's disease, and heart disease, using machine learning algorithms. The prediction models are deployed using Streamlit, a Python library for building interactive web applications.
+
+## final app UI
 ![heart_disease_ui](images/heart_disease.png)
 
-![non_diabetic_ui ]()
+![non_diabetic_ui ](images/Non-diabetic.png)
+
+
+## DATA VISUALIZATION IMAGES:
+
+![scatter_matrix](images/visuu_10.png)
+
+![heat_map](images/visu_9.png)
+
+
+![pie-chart](images/visu_7.png)
+
+
+![histogram](images/visuu_11.png)
 
 ## Table of Contents
-- [ Introduction ]
-- Features
-- Setup
-- Usage
+- [ Introduction ](https://github.com/imkhushboo/Multiple_disease_Prediction_System/edit/master/README.md#introduction)
+- [Features](https://github.com/imkhushboo/Multiple_disease_Prediction_System/edit/master/README.md#features)
+- [Setup](https://github.com/imkhushboo/Multiple_disease_Prediction_System/edit/master/README.md#setup)
+- [Usage](https://github.com/imkhushboo/Multiple_disease_Prediction_System/edit/master/README.md#usage)
 
 
 ## Introduction
 The Multiple Disease Prediction project aims to create a user-friendly web application that allows users to input relevant medical information and receive predictions for different diseases. The machine learning models trained on disease-specific datasets enable accurate predictions for diabetes, Parkinson's disease, and heart disease.
 
-Features
+## Features
 The Multiple Disease Prediction web application offers the following features:
 
-User Input: Users can input their medical information, including age, gender, blood pressure, cholesterol levels, and other relevant factors.
-Disease Prediction: The application utilizes machine learning models to predict the likelihood of having diabetes, Parkinson's disease, and heart disease based on the inputted medical data.
-Prediction Results: The predicted disease outcomes are displayed to the user, providing an indication of the probability of each disease.
-Visualization: Visualizations are generated to highlight important features and provide insights into the prediction process.
-User-Friendly Interface: The web application offers an intuitive and user-friendly interface, making it easy for individuals without technical knowledge to use the prediction tool.
-Setup
+- User Input: Users can input their medical information, including age, gender, blood pressure, cholesterol levels, and other relevant factors.
+- Disease Prediction: The application utilizes machine learning models to predict the likelihood of having diabetes, Parkinson's disease, and heart disease based on the inputted medical data.
+- Prediction Results: The predicted disease outcomes are displayed to the user, providing an indication of the probability of each disease.
+- Visualization: Visualizations are generated to highlight important features and provide insights into the prediction process.
+- User-Friendly Interface: The web application offers an intuitive and user-friendly interface, making it easy for individuals without technical knowledge to use the prediction tool.
+- Setup
 To use this project locally, follow these steps:
 
-Clone the repository:
-git clone https://github.com/your-username/multiple-disease-prediction.git
-Install the required dependencies by running:
-pip install -r requirements.txt
-Download the pre-trained machine learning models for diabetes, Parkinson's disease, and heart disease. Make sure to place them in the appropriate directories within the project structure.
+1. Clone the repository:
+> git clone https://github.com/your-username/multiple-disease-prediction.git
+2. Install the required dependencies by running:
+> pip install -r requirements.txt
+3. Download the pre-trained machine learning models for diabetes, Parkinson's disease, and heart disease. Make sure to place them in the appropriate directories within the project structure.
 
 Update the necessary configurations and file paths in the project files.
 
-Usage
+## Usage
 To run the Multiple Disease Prediction web application, follow these steps:
 
-Open a terminal or command prompt and navigate to the project directory.
+1. Open a terminal or command prompt and navigate to the project directory.
 
-Run the following command to start the Streamlit application:
+2. Run the following command to start the Streamlit application:
 
-streamlit run app.py
-Access the web application by opening the provided URL in your web browser.
+> streamlit run app.py
+3. Access the web application by opening the provided URL in your web browser.
 
-Input the relevant medical information as requested by the application.
+4. Input the relevant medical information as requested by the application.
 
-Click the "Predict" button to generate predictions for diabetes, Parkinson's disease, and heart disease based on the provided data.
+5. Click the "Predict" button to generate predictions for diabetes, Parkinson's disease, and heart disease based on the provided data.
 
-View the prediction results and any accompanying visualizations or insights.
+6. View the prediction results and any accompanying visualizations or insights.
 
-Feel free to customize the web application's appearance, add more disease prediction models, or integrate additional features based on your specific requirements.
+7. Feel free to customize the web application's appearance, add more disease prediction models, or integrate additional features based on your specific requirements.
